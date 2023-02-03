@@ -1,11 +1,11 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: pardus-image-writer
+Upstream-Name: pardus-lightdm-greeter-ebaqr-ogretmen
 Source: https://www.pardus.org.tr
 
 
 
 Files: *
-Copyright: 2020 Ali Riza KESKIN <aliriza.keskin@pardus.org.tr>
+Copyright: 2020 Bayram KARAHAN <bayramk@gmail.com>
 License: GPL-3.0+
 
 License: GPL-3.0+
