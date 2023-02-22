@@ -31,7 +31,7 @@ def qr_json_action(json_data):
         #lightdm.login()
         #login_user("ogretmen","ogretmen")
         #os.system("curl -X POST -d 'username=ogretmen&password=ogretmen' http://127.0.0.1:8080")
-        os.system("/usr/lib/pardus-login ebaqr etahta+ebaqr")
+        os.system("/usr/bin/sshlogin ebaqr etahta+ebaqr")
         
     else:
         q.refresh()
