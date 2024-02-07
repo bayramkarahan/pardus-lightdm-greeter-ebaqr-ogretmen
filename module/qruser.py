@@ -34,7 +34,7 @@ def qr_json_action(json_data):
         if os.path.exists("/etc/qrpsw"):
             psw=open("/etc/qrpsw","r").read().strip()
         #os.system("/usr/bin/sshlogin ebaqr "+psw)
-        os.system("echo '/usr/bin/sshlogin ebaqr "+psw+"' | netcat localhost 7777")
+        os.system("echo '/usr/bin/sshlogin ebaqr "+psw+"' | netcat localhost 7777 &")
         
     else:
         q.refresh()
