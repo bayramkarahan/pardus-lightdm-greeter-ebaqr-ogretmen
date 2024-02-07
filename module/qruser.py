@@ -33,7 +33,8 @@ def qr_json_action(json_data):
         #os.system("curl -X POST -d 'username=ogretmen&password=ogretmen' http://127.0.0.1:8080")
         if os.path.exists("/etc/qrpsw"):
             psw=open("/etc/qrpsw","r").read().strip()
-        os.system("/usr/bin/sshlogin ebaqr "+psw)
+        #os.system("/usr/bin/sshlogin ebaqr "+psw)
+        os.system("echo '/usr/bin/sshlogin ebaqr "+psw+"' | netcat localhost 7777")
         
     else:
         q.refresh()
