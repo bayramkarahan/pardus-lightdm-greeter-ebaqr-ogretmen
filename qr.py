@@ -14,6 +14,7 @@ class QrWidget(Gtk.Box):
         self.__web2=WebKit2.WebView()
         self.__web.load_uri("https://giris.eba.gov.tr/EBA_GIRIS/studentQrcode.jsp")
         self.__web.connect("load-changed",self.__load_event)
+        self.__web.set_zoom_level(self.__web.get_zoom_level() - 0.2)
         self.__web2.connect("load-changed",self.__load_event2)
         self.__web.set_sensitive(False)
         self.data_action = None
